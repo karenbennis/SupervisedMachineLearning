@@ -16,9 +16,13 @@ Libraries: Warnings, NumPy, Pandas, Scikit-learn, Imbalanced-learn, Operator, Pa
 Software: Jupyter Lab 1.2.6
 
 ## Files
+The Challenge folder contains the notebooks related to the credit risk analysis described in the overview, above.
+
 The different resampling models were trained in the Jupyter notebook "credit_risk_resampling.ipynb". For each resampling technique, different solvers were used so that the model with the best overall results for detecting high_risk could be identified.
 
 The different models with ensemble classifiers were trained in the Jupyter notebook "credit_risk_ensemble.ipynb".
+
+The Practice folder contains practice files.
 
 ## Results
 
