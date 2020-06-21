@@ -126,8 +126,8 @@ Results for each solver are summarized in the tables below.
 *solver = newton-cg*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.01 | 0.94 | 0.02 |
-|low_risk| 1.00 | 0.37 | 0.54 |
+|high_risk| 0.01 | 0.93 | 0.02 |
+|low_risk| 1.00 | 0.31 | 0.48 |
 
 *solver = lbfgs*
 |         | Precision | Recall | F1 Score |
@@ -138,8 +138,8 @@ Results for each solver are summarized in the tables below.
 *solver = liblinear*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.01 | 0.82 | 0.02 |
-|low_risk| 1.00 | 0.48 | 0.65 |
+|high_risk| 0.01 | 0.85 | 0.02 |
+|low_risk| 1.00 | 0.47 | 0.64 |
 
 *solver = sag*
 |         | Precision | Recall | F1 Score |
@@ -150,7 +150,7 @@ Results for each solver are summarized in the tables below.
 *solver = saga*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.02 | 0.03 | 0.02 |
+|high_risk| 0.01 | 0.02 | 0.02 |
 |low_risk| 0.99 | 0.99 | 0.99 |
 
 ClusterCentroids with any of the solvers is good at predicting low_risk and poor at predicting high_risk, as evidenced by the precision values.
@@ -161,13 +161,13 @@ The following table shows the ClusterCentroids's balanced accuracy score for eac
 
 | Solver | Balanced Accuracy Score |
 |--------|-------------------------|
-|newton-cg | **0.66** |
+|newton-cg | 0.62 |
 | lbfgs | 0.55 |
-| liblinear | 0.65 |
+| liblinear | **0.66** |
 | sag | 0.53 |
 | saga | 0.51 |
 
-The ClusterCentroids algorithm with solver equal to *newton-cg* has the highest balanced accuracy score by comparison with the other solvers.
+The ClusterCentroids algorithm with solver equal to *liblinear* has the highest balanced accuracy score by comparison with the other solvers.
 
 ### Resampling results: Combination Sampling using SMOTEENN
 Results for each solver are summarized in the tables below.
@@ -181,26 +181,26 @@ Results for each solver are summarized in the tables below.
 *solver = lbfgs*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.01 | 0.72 | 0.02 |
-|low_risk| 1.00 | 0.57 | 0.73 |
+|high_risk| 0.01 | 0.78 | 0.02 |
+|low_risk| 1.00 | 0.54 | 0.70 |
 
 *solver = liblinear*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.01 | 0.74 | 0.03 |
-|low_risk| 1.00 | 0.68 | 0.81 |
+|high_risk| 0.01 | 0.76 | 0.03 |
+|low_risk| 1.00 | 0.69 | 0.81 |
 
 *solver = sag*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
 |high_risk| 0.01 | 0.71 | 0.02 |
-|low_risk| 1.00 | 0.50 | 0.67 |
+|low_risk| 1.00 | 0.51 | 0.67 |
 
 *solver = saga*
 |         | Precision | Recall | F1 Score |
 |---------|-----------|--------|----------|
-|high_risk| 0.01 | 0.71 | 0.02 |
-|low_risk| 1.00 | 0.49 | 0.65 |
+|high_risk| 0.01 | 0.70 | 0.02 |
+|low_risk| 1.00 | 0.49 | 0.66 |
 
 SMOTEENN with any of the solvers is good at predicting low_risk and poor at predicting high_risk, as evidenced by the precision values.
 
@@ -211,8 +211,8 @@ The following table shows the SMOTEENN's balanced accuracy score for each solver
 | Solver | Balanced Accuracy Score |
 |--------|-------------------------|
 | newton-cg | **0.75** |
-| lbfgs | 0.65 |
-| liblinear | 0.71 |
+| lbfgs | 0.66 |
+| liblinear | 0.73 |
 | sag | 0.61 |
 | saga | 0.60 |
 
