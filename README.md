@@ -3,17 +3,17 @@
 ## Project Overview
 The following repository includes Jupyter notebooks for supervised machine learning models to assess credit risk, using data from LendingClub, a peer-to-peer lending services company.
 
-Credit risk inherently is unbalanced in terms of classification (as the number of good loans outnumbers risky loans by a large volume). Therefore, machine learning models were built using different resampling techniques from imbalanced-learn and scikit-learn libiraries.
+Credit risk inherently is unbalanced in terms of classification (as the number of good loans outnumbers risky loans by a large volume). Therefore, machine learning models were built using different resampling techniques from imbalanced-learn and scikit-learn libraries.
 
 The analysis of the models' performance is included below.
 
 As an extension to the resampling analyis, two additional models with ensemble classifiers were trained. Results are discussed below.
 
 ## Resources
-Data Sources: LoanStats_2019Q1.csv
-Language: Python
-Libraries: Warnings, NumPy, Pandas, Scikit-learn, Imbalanced-learn, Operator, Pathlib, Collections
-Software: Jupyter Lab 1.2.6
+* Data Sources: LoanStats_2019Q1.csv
+* Language: Python
+* Libraries: Warnings, NumPy, Pandas, Scikit-learn, Imbalanced-learn, Operator, Pathlib, Collections
+* Software: Jupyter Lab 1.2.6
 
 ## Files
 The Challenge folder contains the notebooks related to the credit risk analysis described in the overview, above.
